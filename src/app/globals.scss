@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	/* --background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255; */
+	--font-inter: "Inter", sans-serif;
+	--font-roboto: "Roboto", sans-serif;
+	--font-open-sans: "Open Sans", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+html {
+	font-family: var(--font-open-sans);
+	transition: all 0.3s ease;
+	background-color: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	display: block;
+	font-family: var(--font-open-sans);
+	font-weight: bold;
+	letter-spacing: -0.02em;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+h4 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+h5 {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+p {
+	font-family: var(--font-open-sans);
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: -0.02em;
+}
+
+a {
+	font-family: var(--font-open-sans);
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: -0.02em;
+}
+
+b,
+strong {
+	font-weight: bold !important;
+}
+
+ol,
+ul,
+menu {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+ol {
+	list-style-type: decimal !important;
+}
+ul {
+	list-style-type: disc !important;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+}
+
+/* custom arrow menu dropdown */
+.ant-dropdown-menu-submenu-title {
+	display: flex;
+	align-items: center;
+}
+.ant-dropdown-menu-submenu-arrow {
+	display: flex !important;
+}
+
+// Button
+
+.btn_icon_primary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4ba3da3f;
+	color: #155979 !important;
+	border-radius: 5px;
+	width: 49px;
+	height: 49px;
+	border: none !important;
+	padding: 4px !important;
+	transition: all 0.3s ease;
+}
+.btn_icon_primary:hover {
+	background-color: #4ba3da;
+	color: white !important;
+}
+
+.btn_text_primary {
+	--color: #4ba3da;
+	font-family: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin: 20px 0;
+	padding: 1.357em 1.786em;
+	z-index: 1;
+	color: var(--color);
+	border: none !important;
+	border-radius: 4px;
+	position: relative;
+	background-color: white;
+	&::before {
+		position: absolute;
+		content: "";
+		background: var(--color);
+		width: 300px;
+		height: 200px;
+		z-index: -1;
+		border-radius: 50%;
+		top: 100%;
+		left: 100%;
+		transition: 0.3s all;
+	}
+	&:hover {
+		color: white !important;
+		&::before {
+			top: -30px;
+			left: -40px;
+		}
+	}
+}
+
+.btn_text_primary_2 {
+	--color: #268dcc;
+	font-family: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin: 20px 0;
+	padding: 1.357em 1.786em;
+	z-index: 1;
+	color: white;
+	border: none !important;
+	border-radius: 4px;
+	position: relative;
+	background-color: #4ba3da;
+	&::before {
+		position: absolute;
+		content: "";
+		background: var(--color);
+		width: 300px;
+		height: 200px;
+		z-index: -1;
+		border-radius: 50%;
+		top: 100%;
+		left: 100%;
+		transition: 0.3s all;
+	}
+	&:hover {
+		color: white !important;
+		&::before {
+			top: -30px;
+			left: -40px;
+		}
+	}
+}
+
+// Slick-Slider
+.slick-prev,
+.slick-next {
+	background-color: rgba(255, 255, 255, 0.329) !important;
+	z-index: 1;
+	width: 55px !important;
+	height: 55px !important;
+	border-radius: 5px;
+	&:before {
+		color: black !important;
+		font-size: 24px !important;
+		font-weight: 500 !important;
+		font-family: var(--font-open-sans) !important;
+		width: 100%;
+		height: 100%;
+	}
+	&:hover {
+		background-color: #155979 !important;
+		&:before {
+			color: white !important;
+		}
+	}
+	@media screen and (max-width: 1023px) {
+		width: 45px !important;
+		height: 45px !important;
+		&:before {
+			font-size: 20px !important;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		width: 35px !important;
+		height: 35px !important;
+		&:before {
+			font-size: 16px !important;
+		}
+	}
+}
+.slick-next:before {
+	content: "\003E" !important;
+}
+.slick-prev:before {
+	content: "\003C" !important;
+}
+
+// edtior
+.public-DraftStyleDefault-block {
+	margin: 1em 0;
+}

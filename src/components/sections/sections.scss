@@ -1,0 +1,144 @@
+.custom-float-button {
+	background-color: #fff;
+	svg {
+		color: #155979 !important;
+	}
+	&:hover {
+		background-color: #4ba3da;
+		svg {
+			color: #fff !important;
+		}
+	}
+}
+
+.triangle {
+	width: 0;
+	height: 100%;
+	border-style: solid;
+	border-width: 535px 120px 0 0;
+	border-color: #eef7ff transparent transparent transparent;
+	@media screen and (max-width: 1280px) {
+		border-width: 475px 100px 0 0;
+	}
+}
+
+.box_video_model {
+	.ant-modal-content {
+		background-color: transparent !important;
+		box-shadow: none !important;
+		padding: 0 !important;
+		.ant-modal-close-x {
+			background-color: white !important;
+			padding: 6px !important;
+			border-radius: 6px !important;
+			width: 20px !important;
+			height: 20px !important;
+		}
+	}
+}
+
+// section_1 Slick-Slider
+.section_1 {
+	.slick-next {
+		right: 25px !important;
+	}
+	.slick-prev {
+		left: 25px !important;
+	}
+	.slick-dots {
+		bottom: 25px !important;
+	}
+}
+
+.section_6 {
+	background-image: url("../../../public/assets/images/1-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+// section_5 Slick-Slider
+.section_cus_1 {
+	.slick-next {
+		right: -60px !important;
+	}
+	.slick-prev {
+		left: -60px !important;
+	}
+	.slick-dots {
+		bottom: -40px !important;
+	}
+	@media screen and (max-width: 640px) {
+		.slick-next {
+			right: -40px !important;
+		}
+		.slick-prev {
+			left: -40px !important;
+		}
+	}
+}
+
+.custom-progress {
+	&.ant-progress-circle {
+		.ant-progress-circle-trail {
+			stroke: #f3f3f3;
+		}
+
+		.ant-progress-circle-path {
+			stroke: #1890ff; // Màu sắc của phần đã lấp đầy
+			animation: fillTo75 2s ease both; // Chạy animation fillTo75 trong 2 giây
+		}
+	}
+}
+
+@keyframes fillTo75 {
+	0% {
+		stroke-dasharray: 0 100; // Bắt đầu với dasharray 0%
+	}
+	75% {
+		stroke-dasharray: 75 100; // Kết thúc với dasharray 75%
+	}
+}
+
+// Section 2
+.bg_section2 {
+	background-image: url("../../../public/assets/images/MIN00095.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.bg_section2::before {
+	content: ""; /* Cần có nội dung trống để phần tử pseudo hiển thị */
+	position: absolute; /* Thiết lập vị trí tuyệt đối để lớp phủ */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffffd9;
+}
+
+//LeftContent1
+.left_content1 {
+	.ant-input-group-addon {
+		vertical-align: baseline !important;
+		button {
+			background-color: #4ba3da;
+			&:hover {
+				background-color: #155979 !important;
+			}
+		}
+	}
+	.ant-input-affix-wrapper:hover {
+		border-color: #4ba3da !important;
+	}
+	.ant-input-affix-wrapper:focus {
+		border-color: #4ba3da !important;
+	}
+	.ant-input-affix-wrapper:focus-within {
+		border-color: #4ba3da !important;
+	}
+}
