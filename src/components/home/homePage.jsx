@@ -48,32 +48,32 @@ export default function HomePage() {
 		}
 	};
 	const [isOpen, setIsOpen] = useState(false);
-	const [dataServices, setDataServices] = useState([]);
-	const [dataNews, setDataNews] = useState([]);
-	const [dataComment3, setDataComment3] = useState([]);
+	// const [dataServices, setDataServices] = useState([]);
+	// const [dataNews, setDataNews] = useState([]);
+	// const [dataComment3, setDataComment3] = useState([]);
 
-	const handleGetDataAll = async () => {
-		try {
-			const [responseServices, responseNews, responseComment3] =
-				await Promise.all([
-					handleGetData({
-						api: "dmvt",
-						params: { limit: 6 },
-						q: { status: true, "exfields.loai_vat_tu": "Services" },
-					}),
-					handleGetData({ api: "news", params: { limit: 3 } }),
-					handleGetData({ api: "comment3" }),
-				]);
-			setDataServices(responseServices);
-			setDataNews(responseNews);
-			setDataComment3(responseComment3);
-		} catch (error) {
-			console.log(error);
-		}
-	};
+	// const handleGetDataAll = async () => {
+	// 	try {
+	// 		const [responseServices, responseNews, responseComment3] =
+	// 			await Promise.all([
+	// 				handleGetData({
+	// 					api: "dmvt",
+	// 					params: { limit: 6 },
+	// 					q: { status: true, "exfields.loai_vat_tu": "Services" },
+	// 				}),
+	// 				handleGetData({ api: "news", params: { limit: 3 } }),
+	// 				handleGetData({ api: "comment3" }),
+	// 			]);
+	// 		setDataServices(responseServices);
+	// 		setDataNews(responseNews);
+	// 		setDataComment3(responseComment3);
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// };
 
 	useEffect(() => {
-		handleGetDataAll();
+		// handleGetDataAll();
 		setIsOpen(true);
 	}, []);
 	return (
@@ -83,9 +83,9 @@ export default function HomePage() {
 			<Section2 />
 			<Section3 />
 			<Section4 />
-			<Section7 data={dataComment3} />
+			<Section7 />
 			{/* <Section5 /> */}
-			<Section6 data={dataNews} title="Tin tức nha khoa" />
+			<Section6 title="Tin tức nha khoa" />
 			<SectionFooter1 />
 			<FloatButton.BackTop
 				shape="square"
