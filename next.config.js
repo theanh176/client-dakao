@@ -9,7 +9,7 @@ const nextConfig = {
 	images: {
 		domains: [
 			"api.fostech.vn",
-			"client-dentist.vercel.app",
+			"client-dakao.vercel.app",
 			"api.goodapp.vn",
 		],
 	},

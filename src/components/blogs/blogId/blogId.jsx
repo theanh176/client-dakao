@@ -59,7 +59,7 @@ export default function BlogId() {
 	}, [idDetailNews]);
 
 	const shareUrl =
-		"https://client-dentist.vercel.app/blogs/rang-su:-lam-sao-de-moi-nu-cuoi-la-mot-tac-pham";
+		"https://client-dakao.vercel.app/blogs/rang-su:-lam-sao-de-moi-nu-cuoi-la-mot-tac-pham";
 	const title = "Tiêu đề của trang";
 	return (
 		<React.Fragment>
