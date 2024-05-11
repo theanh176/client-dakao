@@ -47,6 +47,7 @@ import Section13_2 from "../../public/assets/images/section13_2.jpg";
 import Section13_3 from "../../public/assets/images/section13_3.jpg";
 import Section13_4 from "../../public/assets/images/section13_4.jpg";
 import ServiceBanner from "../../public/assets/images/MIN00209.jpg";
+import Image505 from "../../public/assets/images/505.jpg";
 
 export {
 	LogoHoaCuoi,
@@ -98,4 +99,5 @@ export {
 	Section13_3,
 	Section13_4,
 	ServiceBanner,
+	Image505,
 };

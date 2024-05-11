@@ -7,6 +7,8 @@ import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import "./globals.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
+import { Image505 } from "@/utils/images";
 
 dayjs.extend(LocalizedFormat);
 dayjs.locale("vi"); // use locale globally
@@ -38,11 +40,16 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<AOSInit />
 			<body className="bg-white w-full">
-				<Header />
+				{/* <Header />
 				<div className="max-lg:pt-[70px] mx-auto mb-[500px] max-lg:mb-0 bg-white">
 					{children}
 				</div>
-				<Footer />
+				<Footer /> */}
+				<Image
+					src={Image505}
+					alt="image505"
+					className="w-full object-cover h-screen"
+				/>
 			</body>
 		</html>
 	);
