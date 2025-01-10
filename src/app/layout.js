@@ -40,16 +40,16 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<AOSInit />
 			<body className="bg-white w-full">
-				{/* <Header />
+				<Header />
 				<div className="max-lg:pt-[70px] mx-auto mb-[500px] max-lg:mb-0 bg-white">
 					{children}
 				</div>
-				<Footer /> */}
-				<Image
+				<Footer />
+				{/* <Image
 					src={Image505}
 					alt="image505"
 					className="w-full object-cover h-screen"
-				/>
+				/> */}
 			</body>
 		</html>
 	);
