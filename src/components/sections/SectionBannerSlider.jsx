@@ -47,7 +47,7 @@ export default function SectionBannerSlider() {
 					className="flex flex-col justify-start items-start gap-2"
 				>
 					<div className="text-xs tracking-[.2em] font-semibold uppercase text-white bg-[#4ba3da] p-2 rounded-md">
-						Nha Khoa DaKao
+						Nha Khoa ĐaKao
 					</div>
 					<div className="text-5xl font-semibold text-[#2e3192] bg-[#fff] px-2 py-4 rounded-md">
 						Chúng tôi sẽ mang lại cho bạn

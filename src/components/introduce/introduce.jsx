@@ -45,7 +45,7 @@ export default function Introduce() {
 	}, []);
 	return (
 		<React.Fragment>
-			<SectionBanner title={"Giới thiệu - Nha Khoa DaKao"} />
+			<SectionBanner title={"Giới thiệu - Nha Khoa ĐaKao"} />
 			<Section9 />
 			<Section3 />
 			<Section10 />

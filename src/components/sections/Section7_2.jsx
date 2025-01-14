@@ -95,7 +95,7 @@ export default function Section7_2({ data = dataSection_8 }) {
 					<br /> của khách hàng
 				</div>
 				<span className="max-lg:w-full text-justify text-base text-[#8a8a8a]">
-					Tại <span className="text-[#4ba3da]">Nha Khoa DaKao</span>,
+					Tại <span className="text-[#4ba3da]">Nha Khoa ĐaKao</span>,
 					đến với chúng tôi để khám răng tổng quát và làm sạch răng
 					định kỳ, hoặc đến vì những nhu cầu chuyên sâu như làm răng
 					sứ hay implant

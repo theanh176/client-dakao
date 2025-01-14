@@ -55,10 +55,10 @@ export default function Section5() {
 					Chào mừng đến với
 				</div>
 				<div className="text-[#155979] text-4xl font-semibold">
-					Nha Khoa DaKao
+					Nha Khoa ĐaKao
 				</div>
 				<span className="w-4/5 text-base text-[#8a8a8a] text-center">
-					Tại <span className="text-[#4ba3da]">Nha Khoa DaKao</span>,
+					Tại <span className="text-[#4ba3da]">Nha Khoa ĐaKao</span>,
 					chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa uy tín
 					và chất lượng cho mỗi bệnh nhân của chúng tôi.
 				</span>

@@ -25,7 +25,7 @@ export default function Section9() {
 				<span className="text-justify">
 					Tại{" "}
 					<span className="text-[#4ba3da] font-semibold">
-						Nha Khoa DaKao
+						Nha Khoa ĐaKao
 					</span>
 					, chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa uy tín
 					và chất lượng cho mỗi bệnh nhân của chúng tôi.

@@ -58,10 +58,10 @@ export default function Section1() {
 					/>
 				</div>
 				<span className="text-[#155979] text-2xl font-semibold hover:text-[#4ba3da] cursor-pointer">
-					Chào mừng đến với Nha Khoa DaKao
+					Chào mừng đến với Nha Khoa ĐaKao
 				</span>
 				<span className="text-base text-[#8a8a8a] text-justify">
-					Tại <span className="text-[#4ba3da]">Nha Khoa DaKao</span>,
+					Tại <span className="text-[#4ba3da]">Nha Khoa ĐaKao</span>,
 					chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa uy tín
 					và chất lượng cho mỗi bệnh nhân của chúng tôi.
 				</span>

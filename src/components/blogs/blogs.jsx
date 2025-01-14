@@ -72,7 +72,7 @@ export default function Blogs() {
 
 	return (
 		<React.Fragment>
-			<SectionBanner title={"Blogs - Nha Khoa DaKao"} />
+			<SectionBanner title={"Blogs - Nha Khoa ĐaKao"} />
 			{/* {isDataNews.map((item, index) => {
 				return (
 					item?.data.length > 0 && (

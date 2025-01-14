@@ -8,7 +8,7 @@ import { FloatButton } from "antd";
 export default function Staffs() {
 	return (
 		<React.Fragment>
-			<SectionBanner title={"Nhân viên Nha Khoa DaKao"} />
+			<SectionBanner title={"Nhân viên Nha Khoa ĐaKao"} />
 			<Section4 />
 			<SectionFooter1 />
 			<FloatButton.BackTop

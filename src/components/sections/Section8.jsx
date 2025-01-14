@@ -92,11 +92,11 @@ export default function Section8({ data = dataSection_9 }) {
 					Chào mừng đến với
 				</div>
 				<div className="text-[#155979] text-4xl font-semibold">
-					Nha Khoa DaKao
+					Nha Khoa ĐaKao
 				</div>
 				<span className="w-4/5 text-base text-[#8a8a8a] text-center">
 					Tại{" "}
-					<span className="text-[#4ba3da]">Nha Khoa DaKao</span>,
+					<span className="text-[#4ba3da]">Nha Khoa ĐaKao</span>,
 					chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa uy tín
 					và chất lượng cho mỗi bệnh nhân của chúng tôi.
 				</span>
@@ -115,7 +115,7 @@ export default function Section8({ data = dataSection_9 }) {
 						<br />
 						<br />
 						Xin cám ơn quý khách đã lựa chọn{" "}
-						<span className="font-semibold">Nha Khoa DaKao</span>
+						<span className="font-semibold">Nha Khoa ĐaKao</span>
 					</span>
 				</div>
 			</div>
@@ -123,7 +123,9 @@ export default function Section8({ data = dataSection_9 }) {
 				{data.map((item, index) => {
 					return (
 						<Link
-							href={`/services/${item?.exfields?.slug || "dich-vu"}`}
+							href={`/services/${
+								item?.exfields?.slug || "dich-vu"
+							}`}
 							data-aos="zoom-in"
 							key={index}
 							className="flex flex-col justify-start items-center gap-2 w-[calc(100%/3-24px)] max-lg:w-[calc(100%/2-24px)] max-md:w-4/5 max-md:mx-auto max-sm:w-full"

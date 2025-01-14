@@ -27,7 +27,7 @@ export default function Footer() {
 						<span className="text-sm">
 							Được thành lập năm 2004 đến nay,{" "}
 							<span className="text-[#4ba3da]">
-								Nha Khoa DaKao
+								Nha Khoa ĐaKao
 							</span>{" "}
 							tự hào đã đã điều trị cho hơn{" "}
 							<span className="text-[#4ba3da]">
@@ -169,7 +169,7 @@ export default function Footer() {
 			</div>
 			<div className="bg-[#fff] w-full text-[#4ba3da] py-4 px-20 max-xl:px-5 text-xs flex justify-between">
 				<span className="max-lg:w-full text-center !font-semibold">
-					Bản quyền thuộc Nha Khoa DaKao
+					Bản quyền thuộc Nha Khoa ĐaKao
 				</span>
 				<span className="max-lg:hidden !font-semibold">
 					Thứ 2-Thứ 7 08:00-12:00 + 14:00-19:00

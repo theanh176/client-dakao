@@ -37,7 +37,7 @@ export default function Services() {
 
 	return (
 		<React.Fragment>
-			<SectionBanner title={"Dịch Vụ Nha Khoa DaKao"} />
+			<SectionBanner title={"Dịch Vụ Nha Khoa ĐaKao"} />
 			<Section2 />
 			<Section7_2 />
 			<SectionFooter1 />

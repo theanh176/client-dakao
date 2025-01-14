@@ -9,7 +9,7 @@ export default function Section11() {
 						Liên hệ
 					</div>
 					<div className="text-[#155979] text-4xl font-semibold max-lg:text-center">
-						Nha Khoa DaKao
+						Nha Khoa ĐaKao
 					</div>
 					<span className="w-4/5 max-lg:w-full text-base text-[#181818] max-lg:text-center">
 						Quý khách vui lòng gửi thông tin cho chúng tôi để được
@@ -18,7 +18,7 @@ export default function Section11() {
 						<br />
 						<br />
 						Xin cám ơn quý khách đã lựa chọn{" "}
-						<span className="font-semibold">Nha Khoa DaKao</span>
+						<span className="font-semibold">Nha Khoa ĐaKao</span>
 					</span>
 				</div>
 			</div>

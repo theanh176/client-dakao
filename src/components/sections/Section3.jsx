@@ -23,11 +23,11 @@ export default function Section3() {
 						Chào mừng đến với
 					</div>
 					<div className="text-[#155979] text-4xl font-semibold">
-						Nha Khoa DaKao - Bác sĩ Ninh
+						Nha Khoa ĐaKao - Bác sĩ Ninh
 					</div>
 					<span className="text-base text-[#8a8a8a] text-justify">
 						Tại{" "}
-						<span className="text-[#4ba3da]">Nha Khoa DaKao</span>,
+						<span className="text-[#4ba3da]">Nha Khoa ĐaKao</span>,
 						chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa uy
 						tín và chất lượng cho mỗi bệnh nhân của chúng tôi.
 						<span className="text-base text-[#8a8a8a]">

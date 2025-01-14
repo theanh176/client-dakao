@@ -81,13 +81,15 @@ export default function Section2({ data = dataSection_2 }) {
 						data-aos="fade-right"
 						className="text-[#155979] text-5xl max-lg:text-3xl font-semibold max-lg:text-center"
 					>
-						Nha Khoa DaKao
+						Nha Khoa ĐaKao
 					</div>
 				</div>
 				{data.map((item, index) => {
 					return (
 						<Link
-							href={`/services/${item?.exfields?.slug || "dich-vu"}`}
+							href={`/services/${
+								item?.exfields?.slug || "dich-vu"
+							}`}
 							data-aos="zoom-in"
 							key={index}
 							className="flex justify-start items-start gap-2 w-[calc(100%/3-24px)] max-lg:w-[calc(100%/2-24px)] max-md:w-4/5 max-md:mx-auto	 max-sm:w-full"

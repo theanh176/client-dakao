@@ -48,7 +48,7 @@ const dataSection_6 = [
 		exfields: {
 			banner: Section13_4,
 			mo_ta_ngan2:
-				"Tại Nha Khoa DaKao, mục tiêu cuối cùng của chúng tôi là bảo đảm sự toàn vẹn, vẻ đẹp và sức khỏe răng miệng ở mức hoàn hảo nhất.",
+				"Tại Nha Khoa ĐaKao, mục tiêu cuối cùng của chúng tôi là bảo đảm sự toàn vẹn, vẻ đẹp và sức khỏe răng miệng ở mức hoàn hảo nhất.",
 		},
 	},
 ];
@@ -60,7 +60,7 @@ export default function Section13({ data = dataSection_6 }) {
 					Những dịch vụ
 				</div>
 				<div className="text-[#155979] text-5xl max-lg:text-3xl font-semibold max-lg:text-center">
-					Nha Khoa DaKao
+					Nha Khoa ĐaKao
 				</div>
 			</div>
 			<div className="w-4/5 max-xl:w-[90%] mx-auto flex flex-wrap justify-start max-sm:justify-center items-start pt-10">

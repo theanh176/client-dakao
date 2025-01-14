@@ -60,7 +60,7 @@ export default function UuDai() {
 	// }, []);
 	return (
 		<React.Fragment>
-			<SectionBanner title={"Ưu Đãi - Nha Khoa DaKao"} />
+			<SectionBanner title={"Ưu Đãi - Nha Khoa ĐaKao"} />
 			<Section6
 				// data={isDataNews}
 				title={"Bài viết ưu đãi"}
