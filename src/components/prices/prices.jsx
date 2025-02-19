@@ -10,33 +10,38 @@ import Section4 from "../sections/Section4";
 import { handleGetData } from "@/utils/utilsApi";
 
 export default function Prices() {
-	// const [dataServices, setDataServices] = useState([]);
+	const [dataServices, setDataServices] = useState([]);
 
-	// const handleGetDataAll = async () => {
-	// 	try {
-	// 		const [responseServices] = await Promise.all([
-	// 			handleGetData({
-	// 				api: "dmvt",
-	// 				params: {
-	// 					limit: 50,
-	// 				},
-	// 				q: { status: true, "exfields.loai_vat_tu": "Services" },
-	// 			}),
-	// 		]);
+	const handleGetDataAll = async () => {
+		try {
+			const [responseServices] = await Promise.all([
+				handleGetData({
+					api: "dmvt",
+					params: {
+						limit: 50,
+					},
+					q: { status: true, "exfields.loai_vat_tu": "Services" },
+				}),
+			]);
 
-	// 		setDataServices(responseServices);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
+			const newData = responseServices.filter(
+				(item) =>
+					item.exfields.mandates && item.exfields.mandates.length > 0
+			);
 
-	// useEffect(() => {
-	// 	handleGetDataAll();
-	// }, []);
+			setDataServices(newData);
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	useEffect(() => {
+		handleGetDataAll();
+	}, []);
 	return (
 		<React.Fragment>
 			<SectionBanner title={"bảng giá chi phí dịch vụ"} />
-			<Section8 />
+			<Section8 data={dataServices} />
 			<Section3 />
 			<Section4 />
 			<Section1 />

@@ -1,17 +1,9 @@
-import {
-	Slider1,
-	Slider2,
-	Slider3,
-	Slider4,
-	Slider5,
-	Slider6,
-} from "@/utils/images";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import "./sections.scss";
 
-export default function SectionBannerSlider() {
+export default function SectionBannerSlider({ data }) {
 	const settings = {
 		dots: true,
 		fade: true,
@@ -21,19 +13,22 @@ export default function SectionBannerSlider() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	};
-	const ListImage = [Slider1, Slider4, Slider1, Slider4, Slider4, Slider1];
 
 	return (
 		<section className="section_1 mb-16 max-md:mb-8 relative h-[510px] max-lg:h-[440px] max-md:h-[360px] max-sm:h-[240px] bg-[#EEF7FF]">
 			<Slider {...settings}>
-				{ListImage.map((item, index) => (
+				{data?.map((item, index) => (
 					<div
 						key={index}
 						className="transition-all h-[510px] max-lg:h-[440px] max-md:h-[360px] max-sm:h-[240px] bg-slate-50"
 					>
 						<Image
 							alt="slider"
-							src={item}
+							src={
+								item?.storage
+									? item?.url_banner
+									: `https://api.goodapp.vn${item?.url_banner}`
+							}
 							width={3000}
 							height={1500}
 							className="w-full h-full object-cover"

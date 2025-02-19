@@ -111,7 +111,7 @@ export default function Section8({ data = dataSection_9 }) {
 					</div>
 					<span className="mt-2 w-4/5 max-lg:w-full text-base text-[#181818] max-lg:text-center">
 						Nếu bạn đang cần một nha khoa uy tín, chất lượng thì Nha
-						khoa Hoa Cười là một lựa chọn tin cậy cho bạn.
+						khoa ĐaKao là một lựa chọn tin cậy cho bạn.
 						<br />
 						<br />
 						Xin cám ơn quý khách đã lựa chọn{" "}
@@ -160,7 +160,7 @@ export default function Section8({ data = dataSection_9 }) {
 							</span>
 							<div className="w-[90%] mx-auto flex flex-col justify-start items-center gap-3">
 								<span className="text-center cursor-pointer hover:text-[#4ba3da] text-xl uppercase font-semibold text-[#155979]">
-									{item.ten_vt}
+									{item?.exfields?.name_price}
 								</span>
 								<div className="w-11/12 mx-auto flex gap-2 flex-col justify-start items-start">
 									{item?.exfields?.mandates?.map(

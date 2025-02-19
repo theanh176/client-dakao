@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sections.scss";
 import { VscDebugStart } from "react-icons/vsc";
 import Image from "next/image";
-import { Section4_1 } from "@/utils/images";
+import { Section2_2, Section4_1 } from "@/utils/images";
 import PopupModel from "../modal/popupModel";
 
 export default function Section3() {
@@ -53,10 +53,10 @@ export default function Section3() {
 				></div>
 				<Image
 					alt="image"
-					src={Section4_1}
+					src={Section2_2}
 					width={1000}
 					height={700}
-					className="w-full object-contain"
+					className="w-full object-fill max-h-[523px]"
 				/>
 			</div>
 			<PopupModel

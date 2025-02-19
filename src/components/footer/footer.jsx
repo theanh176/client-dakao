@@ -22,10 +22,11 @@ export default function Footer() {
 								src={FullLogoDaKao}
 								width={135}
 								height={100}
+								className="rounded-full"
 							/>
 						</div>
 						<span className="text-sm">
-							Được thành lập năm 2004 đến nay,{" "}
+							Được thành lập năm 2001 đến nay,{" "}
 							<span className="text-[#4ba3da]">
 								Nha Khoa ĐaKao
 							</span>{" "}

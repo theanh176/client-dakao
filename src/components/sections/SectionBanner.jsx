@@ -1,4 +1,4 @@
-import { Section_Banner } from "@/utils/images";
+import { Section_Banner, Slider1 } from "@/utils/images";
 import Image from "next/image";
 import React from "react";
 
@@ -7,7 +7,7 @@ export default function SectionBanner({ title }) {
 		<section className="mb-16 max-md:mb-8 relative h-[510px] max-lg:h-[440px] max-md:h-[360px] max-sm:h-[240px] bg-[#EEF7FF]">
 			<Image
 				alt="bg_banner"
-				src={Section_Banner}
+				src={Slider1}
 				width={2000}
 				height={1700}
 				className="w-full h-full object-cover"

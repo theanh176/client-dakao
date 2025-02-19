@@ -48,7 +48,7 @@ export default function Section1() {
 				className="w-[calc(100%/3-32px)]
 				max-lg:w-4/5 max-md:w-[95%] flex gap-4 flex-col justify-start items-start"
 			>
-				<div className="w-full overflow-hidden rounded-lg mb-4">
+				<div className="w-full max-h-72 overflow-hidden rounded-lg mb-4">
 					<Image
 						alt="image"
 						src={Section2_1}
@@ -76,7 +76,7 @@ export default function Section1() {
 				data-aos="fade-up"
 				className="w-[calc(100%/3-32px)] max-lg:w-4/5 max-md:w-[95%] flex gap-4 flex-col justify-start items-start"
 			>
-				<div className="w-full overflow-hidden rounded-lg mb-4">
+				<div className="w-full max-h-72 overflow-hidden rounded-lg mb-4">
 					<Image
 						alt="image"
 						src={Section2_2}

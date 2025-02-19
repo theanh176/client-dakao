@@ -1,5 +1,5 @@
 "use client";
-import { FullLogoDaKao } from "@/utils/images";
+import { FullLogoDaKao, Slider1 } from "@/utils/images";
 import { handleCreate, handleGetData } from "@/utils/utilsApi";
 import { Alert, Button, Col, FloatButton, Form, Input, Row } from "antd";
 import Image from "next/image";
@@ -13,6 +13,11 @@ import Section6 from "../sections/Section6";
 import Section7 from "../sections/Section7";
 import SectionBannerSlider from "../sections/SectionBannerSlider";
 import SectionFooter1 from "../sections/SectionFooter1";
+
+const ListImage = [
+	{ url_banner: Slider1, storage: "local" },
+	{ url_banner: Slider1, storage: "local" },
+];
 
 export default function HomePage() {
 	const [alertVisible, setAlertVisible] = useState(false);
@@ -51,34 +56,46 @@ export default function HomePage() {
 	// const [dataServices, setDataServices] = useState([]);
 	// const [dataNews, setDataNews] = useState([]);
 	// const [dataComment3, setDataComment3] = useState([]);
+	const [dataUserFiles, setDataUserFiles] = useState([]);
 
-	// const handleGetDataAll = async () => {
-	// 	try {
-	// 		const [responseServices, responseNews, responseComment3] =
-	// 			await Promise.all([
-	// 				handleGetData({
-	// 					api: "dmvt",
-	// 					params: { limit: 6 },
-	// 					q: { status: true, "exfields.loai_vat_tu": "Services" },
-	// 				}),
-	// 				handleGetData({ api: "news", params: { limit: 3 } }),
-	// 				handleGetData({ api: "comment3" }),
-	// 			]);
-	// 		setDataServices(responseServices);
-	// 		setDataNews(responseNews);
-	// 		setDataComment3(responseComment3);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
+	const handleGetDataAll = async () => {
+		try {
+			const [
+				// responseServices,
+				// responseNews,
+				// responseComment3,
+				responseUserFiles,
+			] = await Promise.all([
+				// handleGetData({
+				// 	api: "dmvt",
+				// 	params: { limit: 6 },
+				// 	q: { status: true, "exfields.loai_vat_tu": "Services" },
+				// }),
+				// handleGetData({ api: "news", params: { limit: 3 } }),
+				// handleGetData({ api: "comment3" }),
+				handleGetData({
+					api: "assbanner",
+					params: { t: 1, page: 1, limit: 500 },
+				}),
+			]);
+			// setDataServices(responseServices);
+			// setDataNews(responseNews);
+			// setDataComment3(responseComment3);
+			setDataUserFiles([...responseUserFiles, ...ListImage]);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
 	useEffect(() => {
-		// handleGetDataAll();
+		handleGetDataAll();
 		setIsOpen(true);
 	}, []);
 	return (
 		<React.Fragment>
-			<SectionBannerSlider />
+			<SectionBannerSlider
+				data={dataUserFiles?.length >= 1 ? dataUserFiles : ListImage}
+			/>
 			<Section1 />
 			<Section2 />
 			<Section3 />
