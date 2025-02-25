@@ -2,58 +2,65 @@ import React, { useEffect, useState } from "react";
 import "./sections.scss";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-import { Section5_1, Section5_2, Section5_3 } from "@/utils/images";
+import {
+	Section5_1,
+	Section5_2,
+	Section5_3,
+	Section9_1,
+	Section9_2,
+	Section9_3,
+} from "@/utils/images";
 import Slider from "react-slick";
 
 const dataSection_8 = [
 	{
 		id: 1,
-		title: "Nguyễn Văn D",
-		picture: Section5_1,
-		description: "Khách hàng sử dụng dich vụ",
+		title: "Trần Thị Lan",
+		picture: Section9_1,
+		description: "Khách hàng niềng răng",
 		content:
-			"Chính sự tận tâm, phong thái chuyên nghiệp của bác sĩ đã làm tôi cảm thấy hoàn toàn tin tưởng, biết rõ ràng mọi vấn đề và cảm thấy tin tưởng thực sự thì sẽ không còn sợ nữa.",
+			"Tôi rất hài lòng với kết quả niềng răng tại đây. Bác sĩ tận tâm, chu đáo, giúp tôi có nụ cười tự tin hơn.",
 	},
-	{
-		id: 2,
-		title: "Nguyễn Văn A",
-		picture: Section5_2,
-		description: "Khách hàng sử dụng dich vụ chăm sóc răng toàn diện",
-		content:
-			"Chính sự tận tâm, phong thái chuyên nghiệp của bác sĩ đã làm tôi cảm thấy hoàn toàn tin tưởng, biết rõ ràng mọi vấn đề và cảm thấy tin tưởng thực sự thì sẽ không còn sợ nữa.",
-	},
+	// {
+	// 	id: 2,
+	// 	title: "Lê Văn Minh",
+	// 	picture: Section5_2,
+	// 	description: "Khách hàng cấy ghép implant",
+	// 	content:
+	// 		"Quá trình cấy ghép implant diễn ra nhẹ nhàng, không đau đớn. Đội ngũ bác sĩ chuyên nghiệp, tay nghề cao.",
+	// },
 	{
 		id: 3,
-		title: "Nguyễn Văn  B",
-		picture: Section5_3,
-		description: "Khách hàng mới",
+		title: "Phạm Thu Hà",
+		picture: Section9_3,
+		description: "Khách hàng tẩy trắng răng",
 		content:
-			"Chính sự tận tâm, phong thái chuyên nghiệp của bác sĩ đã làm tôi cảm thấy hoàn toàn tin tưởng, biết rõ ràng mọi vấn đề và cảm thấy tin tưởng thực sự thì sẽ không còn sợ nữa.",
+			"Răng tôi trắng sáng hơn hẳn sau khi tẩy trắng tại phòng khám. Dịch vụ tuyệt vời, nhân viên thân thiện.",
 	},
 	{
 		id: 4,
-		title: "Nguyễn Văn C",
-		picture: Section5_1,
-		description: "Khách hàng VIP",
+		title: "Hoàng Đức Anh",
+		picture: Section9_2,
+		description: "Khách hàng bọc răng sứ",
 		content:
-			"Chính sự tận tâm, phong thái chuyên nghiệp của bác sĩ đã làm tôi cảm thấy hoàn toàn tin tưởng, biết rõ ràng mọi vấn đề và cảm thấy tin tưởng thực sự thì sẽ không còn sợ nữa.",
+			"Tôi rất ưng ý với hàm răng sứ mới. Màu sắc tự nhiên, đẹp như răng thật. Cảm ơn bác sĩ đã tư vấn nhiệt tình.",
 	},
-	{
-		id: 5,
-		title: "Nguyễn Văn D",
-		picture: Section5_2,
-		description: "Khách hàng sử dụng dich vụ chăm sóc răng toàn diện",
-		content:
-			"Chính sự tận tâm, phong thái chuyên nghiệp của bác sĩ đã làm tôi cảm thấy hoàn toàn tin tưởng, biết rõ ràng mọi vấn đề và cảm thấy tin tưởng thực sự thì sẽ không còn sợ nữa.",
-	},
-	{
-		id: 6,
-		title: "Nguyễn Văn E",
-		picture: Section5_3,
-		description: "Khách hàng mới",
-		content:
-			"Chính sự tận tâm, phong thái chuyên nghiệp của bác sĩ đã làm tôi cảm thấy hoàn toàn tin tưởng, biết rõ ràng mọi vấn đề và cảm thấy tin tưởng thực sự thì sẽ không còn sợ nữa.",
-	},
+	// {
+	// 	id: 5,
+	// 	title: "Đỗ Thị Hương",
+	// 	picture: Section5_2,
+	// 	description: "Khách hàng trám răng thẩm mỹ",
+	// 	content:
+	// 		"Bác sĩ trám răng rất khéo, vết trám gần như không thể nhận ra. Tôi hoàn toàn hài lòng với dịch vụ.",
+	// },
+	// {
+	// 	id: 6,
+	// 	title: "Vũ Quang Huy",
+	// 	picture: Section5_3,
+	// 	description: "Khách hàng lấy cao răng định kỳ",
+	// 	content:
+	// 		"Phòng khám sạch sẽ, hiện đại. Nhân viên lấy cao răng nhẹ nhàng, chu đáo. Tôi sẽ quay lại thường xuyên.",
+	// },
 ];
 
 export default function Section7({ data = dataSection_8 }) {

@@ -53,7 +53,7 @@ export default function HomePage() {
 		}
 	};
 	const [isOpen, setIsOpen] = useState(false);
-	// const [dataServices, setDataServices] = useState([]);
+	const [dataServices, setDataServices] = useState([]);
 	// const [dataNews, setDataNews] = useState([]);
 	// const [dataComment3, setDataComment3] = useState([]);
 	const [dataUserFiles, setDataUserFiles] = useState([]);
@@ -61,16 +61,16 @@ export default function HomePage() {
 	const handleGetDataAll = async () => {
 		try {
 			const [
-				// responseServices,
+				responseServices,
 				// responseNews,
 				// responseComment3,
 				responseUserFiles,
 			] = await Promise.all([
-				// handleGetData({
-				// 	api: "dmvt",
-				// 	params: { limit: 6 },
-				// 	q: { status: true, "exfields.loai_vat_tu": "Services" },
-				// }),
+				handleGetData({
+					api: "dmvt",
+					params: { limit: 6 },
+					q: { status: true, "exfields.loai_vat_tu": "Services" },
+				}),
 				// handleGetData({ api: "news", params: { limit: 3 } }),
 				// handleGetData({ api: "comment3" }),
 				handleGetData({
@@ -78,7 +78,7 @@ export default function HomePage() {
 					params: { t: 1, page: 1, limit: 500 },
 				}),
 			]);
-			// setDataServices(responseServices);
+			setDataServices(responseServices);
 			// setDataNews(responseNews);
 			// setDataComment3(responseComment3);
 			setDataUserFiles([...responseUserFiles, ...ListImage]);
@@ -97,7 +97,7 @@ export default function HomePage() {
 				data={dataUserFiles?.length >= 1 ? dataUserFiles : ListImage}
 			/>
 			<Section1 />
-			<Section2 />
+			<Section2 data={dataServices}/>
 			<Section3 />
 			<Section4 />
 			<Section7 />

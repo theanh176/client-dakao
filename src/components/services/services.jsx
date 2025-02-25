@@ -8,37 +8,37 @@ import SectionFooter1 from "../sections/SectionFooter1";
 import { handleGetData } from "@/utils/utilsApi";
 
 export default function Services() {
-	// const [dataServices, setDataServices] = useState([]);
+	const [dataServices, setDataServices] = useState([]);
 	// const [dataComment3, setDataComment3] = useState([]);
 
-	// const handleGetDataAll = async () => {
-	// 	try {
-	// 		const [responseServices, responseComment3] = await Promise.all([
-	// 			handleGetData({
-	// 				api: "dmvt",
-	// 				params: {
-	// 					limit: 50,
-	// 				},
-	// 				q: { status: true, "exfields.loai_vat_tu": "Services" },
-	// 			}),
-	// 			handleGetData({ api: "comment3" }),
-	// 		]);
+	const handleGetDataAll = async () => {
+		try {
+			const [responseServices, responseComment3] = await Promise.all([
+				handleGetData({
+					api: "dmvt",
+					params: {
+						limit: 50,
+					},
+					q: { status: true, "exfields.loai_vat_tu": "Services" },
+				}),
+				// handleGetData({ api: "comment3" }),
+			]);
 
-	// 		setDataServices(responseServices);
-	// 		setDataComment3(responseComment3);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
+			setDataServices(responseServices);
+			// setDataComment3(responseComment3);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
-	// useEffect(() => {
-	// 	handleGetDataAll();
-	// }, []);
+	useEffect(() => {
+		handleGetDataAll();
+	}, []);
 
 	return (
 		<React.Fragment>
 			<SectionBanner title={"Dịch Vụ Nha Khoa ĐaKao"} />
-			<Section2 />
+			<Section2 data={dataServices}/>
 			<Section7_2 />
 			<SectionFooter1 />
 			<FloatButton.BackTop

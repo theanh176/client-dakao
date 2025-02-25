@@ -7,36 +7,36 @@ import { BsArrowRightCircle } from "react-icons/bs";
 const dataSection_7 = [
 	{
 		id: 1,
-		name_user_created: "Nguyễn Văn  D",
+		name_user_created: "Trần Thị Lan",
 		picture: Section8_1,
-		title: "Răng - Hàm - Mặt",
+		title: "Niềng răng thẩm mỹ - Hành trình kiến tạo nụ cười tự tin",
 		exfields: {
 			mo_ta_ngan2:
-				"Chuyên sâu về Nha khoa Thẩm mỹ. Đây là yếu tố giúp chúng tôi điều trị hiệu quả đồng thời mang lại vẻ đẹp tự nhiên cho hàm răng và nụ cười của bạn.",
+				"Chuyên sâu về niềng răng trong suốt và mắc cài sứ, giúp bạn có nụ cười tự tin mà vẫn đảm bảo tính thẩm mỹ cao. Hành trình niềng răng không chỉ giúp cải thiện thẩm mỹ, mà còn mang lại nhiều lợi ích cho sức khỏe răng miệng.",
 		},
-		date_created: "02/05/2023",
+		date_created: "10/06/2023",
 	},
 	{
 		id: 2,
-		name_user_created: "Nguyễn Văn A",
+		name_user_created: "Lê Văn Minh",
 		picture: Section8_2,
-		title: "Răng - Hàm - Mặt",
+		title: "Cấy ghép Implant - Giải pháp phục hình răng tối ưu",
 		exfields: {
 			mo_ta_ngan2:
-				"Chuyên sâu về Nha khoa Thẩm mỹ. Đây là yếu tố giúp chúng tôi điều trị hiệu quả đồng thời mang lại vẻ đẹp tự nhiên cho hàm răng và nụ cười của bạn.",
+				"Phục hồi răng đã mất với công nghệ Implant hiện đại, đảm bảo chức năng ăn nhai và thẩm mỹ như răng thật. Cấy ghép implant là giải pháp phục hình răng tối ưu, mang lại nhiều ưu điểm vượt trội.",
 		},
-		date_created: "02/05/2023",
+		date_created: "02/06/2024",
 	},
 	{
 		id: 3,
-		name_user_created: "Nguyễn Văn  B",
+		name_user_created: "Phạm Thu Hà",
 		picture: Section8_3,
-		title: "Răng - Hàm - Mặt",
+		title: "Tẩy trắng răng chuyên sâu - Bí quyết sở hữu nụ cười trắng sáng",
 		exfields: {
 			mo_ta_ngan2:
-				"Chuyên sâu về Nha khoa Thẩm mỹ. Đây là yếu tố giúp chúng tôi điều trị hiệu quả đồng thời mang lại vẻ đẹp tự nhiên cho hàm răng và nụ cười của bạn.",
+				"Mang lại hàm răng trắng sáng tự nhiên với phương pháp tẩy trắng răng an toàn, hiệu quả, không gây ê buốt. Tẩy trắng răng là phương pháp đơn giản và hiệu quả để cải thiện màu sắc răng, giúp bạn tự tin hơn trong giao tiếp.",
 		},
-		date_created: "02/05/2023",
+		date_created: "06/09/2024",
 	},
 ];
 export default function Section6({

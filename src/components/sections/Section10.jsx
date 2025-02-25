@@ -210,7 +210,7 @@ export default function Section10() {
 					className="w-[calc(100%/3-32px)] max-lg:w-4/5 flex gap-4 flex-col justify-start items-start"
 				>
 					<span className="text-justify">
-						Được thành lập năm 2004 đến nay,{" "}
+						Được thành lập năm 2001 đến nay,{" "}
 						<span className="text-[#4ba3da] font-semibold">
 							Nha Khoa ĐaKao
 						</span>{" "}

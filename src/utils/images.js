@@ -28,6 +28,9 @@ import Section7_4 from "../../public/assets/images/email.png";
 import Section8_1 from "../../public/assets/images/MIN00012.jpg";
 import Section8_2 from "../../public/assets/images/MIN00067.jpg";
 import Section8_3 from "../../public/assets/images/MIN00304.jpg";
+import Section9_1 from "../../public/assets/images/MIN00091.jpg";
+import Section9_2 from "../../public/assets/images/MIN00092.jpg";
+import Section9_3 from "../../public/assets/images/MIN00393.jpg";
 import Section10_1 from "../../public/assets/images/intro0.png";
 import Section10_2 from "../../public/assets/images/intro1.png";
 import Section10_3 from "../../public/assets/images/intro2.png";
@@ -80,6 +83,9 @@ export {
 	Section8_1,
 	Section8_2,
 	Section8_3,
+	Section9_1,
+	Section9_2,
+	Section9_3,
 	Section10_1,
 	Section10_2,
 	Section10_3,

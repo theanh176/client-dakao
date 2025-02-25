@@ -19,22 +19,22 @@ export default function Section4() {
 		},
 		{
 			id: 2,
-			name: "Phùng Thị Thu Huyền",
-			href: "phung-thi-thu-huyen",
+			name: "Nguyễn Đỗ Tú Linh",
+			href: "nguyen-do-tu-linh",
 			avatar: Section5_2,
-			title: "Quản trị phòng khám",
+			title: "Lễ Tân",
 			description:
-				"Cô đã làm việc với Bác Sĩ từ năm 1999.  Đầu tiên là trợ thủ nha khoa và bây giờ là quản trị phòng khám. Cô  rất tận tâm, nhiệt tình giúp đỡ bệnh nhân của mình...",
+				"Xin chào quý khách! Tôi là Nguyễn Đỗ Tú Linh, lễ tân của Nha Khoa Đakao. Tôi rất vui được chào đón quý khách đến với phòng khám của chúng tôi.",
 		},
-		{
-			id: 3,
-			name: "Nguyễn Thế Anh Thơ",
-			href: "nguyen-the-anh-tho",
-			avatar: Section5_3,
-			title: "Tiếp tân",
-			description:
-				"Trẻ trung, năng động là ưu điểm của cô. Với bằng cấp chuyên môn về quản lý văn phòng, cô ấy giúp cho phòng khám vận hành một cách trơn tru và khoa học...",
-		},
+		// {
+		// 	id: 3,
+		// 	name: "Nguyễn Thế Anh Thơ",
+		// 	href: "nguyen-the-anh-tho",
+		// 	avatar: Section5_3,
+		// 	title: "Tiếp tân",
+		// 	description:
+		// 		"Trẻ trung, năng động là ưu điểm của cô. Với bằng cấp chuyên môn về quản lý văn phòng, cô ấy giúp cho phòng khám vận hành một cách trơn tru và khoa học...",
+		// },
 		// {
 		// 	id: 4,
 		// 	name: "Nguyễn Văn C",
@@ -66,8 +66,8 @@ export default function Section4() {
 		dots: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToShow: 2,
+		slidesToScroll: 2,
 	};
 	const [isSetting_5, setIsSetting_5] = useState(settings_5);
 	useEffect(() => {

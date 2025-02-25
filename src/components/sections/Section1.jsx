@@ -62,8 +62,12 @@ export default function Section1() {
 				</span>
 				<span className="text-base text-[#8a8a8a] text-justify">
 					Tại <span className="text-[#4ba3da]">Nha Khoa ĐaKao</span>,
-					chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa uy tín
-					và chất lượng cho mỗi bệnh nhân của chúng tôi.
+					Tại Nha Khoa ĐaKao, chúng tôi tự hào là địa chỉ chăm sóc
+					răng miệng uy tín và chất lượng, mang đến những dịch vụ nha
+					khoa toàn diện cho mọi khách hàng. Với đội ngũ bác sĩ giàu
+					kinh nghiệm, trình độ chuyên môn cao cùng sự tận tâm trong
+					từng dịch vụ, chúng tôi cam kết mang lại nụ cười khỏe đẹp và
+					sự hài lòng tuyệt đối cho mỗi bệnh nhân.
 				</span>
 				<div className="cursor-pointer uppercase text-xs text-[#155979] hover:text-[#4ba3da] font-semibold flex gap-2 justify-start items-center">
 					Xem thêm{" "}
