@@ -74,24 +74,24 @@ export default function Section6({
 							</div>
 							<div className="w-full flex flex-col justify-start items-start gap-2">
 								<div className="flex flex-col gap-1">
-									<div className="text-[#4ba3da] cursor-pointer hover:text-[#155979] text-sm font-semibold uppercase tracking-[.13em] text-left">
+									<div className="text-[#c4996d] cursor-pointer hover:text-[#183147] text-sm font-semibold uppercase tracking-[.13em] text-left">
 										{moment(item?.date_created).format(
 											"DD/MM/YYYY"
 										)}
 										,
 									</div>
-									<div className="text-[#4ba3da] cursor-pointer hover:text-[#155979] text-xs font-semibold uppercase tracking-[.13em] text-left">
-										{/* {item.name_user_created} */}
-										BS. Ninh
+									<div className="text-[#c4996d] cursor-pointer hover:text-[#183147] text-xs font-semibold uppercase tracking-[.13em] text-left">
+										{item.name_user_created}
+										{/* BS.CK1 Phạm Trịnh Tuấn Khanh */}
 									</div>
 								</div>
-								<div className="hover:text-[#4ba3da] text-[#155979] cursor-pointer text-xl font-semibold text-left">
+								<div className="hover:text-[#c4996d] text-[#183147] cursor-pointer text-xl font-semibold text-left">
 									{item?.title}
 								</div>
 								<div className="text-[#8a8a8a] text-sm text-justify">
 									{item?.exfields?.mo_ta_ngan2}
 								</div>
-								<div className="cursor-pointer uppercase text-xs text-[#155979] hover:text-[#4ba3da] font-semibold flex gap-2 justify-start items-center">
+								<div className="cursor-pointer uppercase text-xs text-[#183147] hover:text-[#c4996d] font-semibold flex gap-2 justify-start items-center">
 									Xem thêm{" "}
 									<div className="w-8 h-8 flex justify-center items-center">
 										<BsArrowRightCircle className="w-7 h-7" />

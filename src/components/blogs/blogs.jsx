@@ -6,70 +6,31 @@ import { FloatButton } from "antd";
 import Section6 from "../sections/Section6";
 import Section7 from "../sections/Section7";
 import { request } from "@/utils/request";
+import { handleGetData } from "@/utils/utilsApi";
 
 export default function Blogs() {
-	// const [isDataNews, setIsDataNews] = useState([]);
+	const [dataNews, setDataNews] = useState([]);
 	// const [dataComment3, setDataComment3] = useState([]);
 
-	// const getDataNews = async () => {
-	// 	try {
-	// 		const groupsResponse = await request.get(
-	// 			`/group?access_token=flex.public.token`,
-	// 			{
-	// 				params: { q: { group_type: "news" }, limit: 100 },
-	// 			}
-	// 		);
+	const handleGetDataAll = async () => {
+		try {
+			const [
+				responseNews,
+				// responseComment3,
+			] = await Promise.all([
+				handleGetData({ api: "news", params: { limit: 3 } }),
+				// handleGetData({ api: "comment3" }),
+			]);
+			setDataNews(responseNews);
+			// setDataComment3(responseComment3);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
-	// 		const newsPromises = groupsResponse?.data?.map(async (group) => {
-	// 			const newsResponse = await request.get(
-	// 				`/news?access_token=flex.public.token`,
-	// 				{
-	// 					params: { q: { category: group?._id }, limit: 100 },
-	// 				}
-	// 			);
-	// 			return { data: newsResponse?.data, title: group?.group_name };
-	// 		});
-
-	// 		const newsData = await Promise.all(newsPromises);
-	// 		setIsDataNews(newsData);
-	// 	} catch (error) {
-	// 		alert(error);
-	// 	}
-	// };
-
-	// const handleGetData = async (api, q) => {
-	// 	try {
-	// 		const response = await request.get(`${api}`, {
-	// 			params: {
-	// 				...q,
-	// 			},
-	// 			headers: {
-	// 				"X-Access-Token": "flex.public.token",
-	// 				"Content-Type": "application/json",
-	// 			},
-	// 		});
-	// 		return response?.data;
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
-	// const handleGetDataAll = async () => {
-	// 	try {
-	// 		const [responseComment3] = await Promise.all([
-	// 			handleGetData("comment3"),
-	// 		]);
-
-	// 		setDataComment3(responseComment3);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
-
-	// useEffect(() => {
-	// 	handleGetDataAll();
-	// 	getDataNews();
-	// }, []);
-
+	useEffect(() => {
+		handleGetDataAll();
+	}, []);
 	return (
 		<React.Fragment>
 			<SectionBanner title={"Blogs - Nha Khoa ĐaKao"} />
@@ -84,7 +45,7 @@ export default function Blogs() {
 					)
 				);
 			})} */}
-			<Section6 />
+			<Section6 title="Tin tức nha khoa" data={dataNews} />
 			<Section7 />
 			<SectionFooter1 />
 			<FloatButton.BackTop

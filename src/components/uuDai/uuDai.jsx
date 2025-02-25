@@ -8,23 +8,23 @@ import SectionBanner from "../sections/SectionBanner";
 import SectionFooter1 from "../sections/SectionFooter1";
 
 export default function UuDai() {
-	// const [isDataNews, setIsDataNews] = useState([]);
+	const [isDataNews, setIsDataNews] = useState([]);
 	// const [dataComment3, setDataComment3] = useState([]);
 
-	// const getDataNews = async () => {
-	// 	try {
-	// 		const response = await request.get(
-	// 			`/news?access_token=flex.public.token`,
-	// 			{
-	// 				// params: { q: { category: group?._id }, limit: 100 },
-	// 				params: { q: { category_name: "Ưu đãi" }, limit: 100 },
-	// 			}
-	// 		);
-	// 		setIsDataNews(response?.data);
-	// 	} catch (error) {
-	// 		alert(error);
-	// 	}
-	// };
+	const getDataNews = async () => {
+		try {
+			const response = await request.get(
+				`/news?access_token=flex.public.token`,
+				{
+					// params: { q: { category: group?._id }, limit: 100 },
+					params: { q: { category_name: "Ưu đãi" }, limit: 100 },
+				}
+			);
+			setIsDataNews(response?.data);
+		} catch (error) {
+			alert(error);
+		}
+	};
 
 	// const handleGetData = async (api, q) => {
 	// 	try {
@@ -54,15 +54,15 @@ export default function UuDai() {
 	// 	}
 	// };
 
-	// useEffect(() => {
-	// 	handleGetDataAll();
-	// 	getDataNews();
-	// }, []);
+	useEffect(() => {
+		// handleGetDataAll();
+		getDataNews();
+	}, []);
 	return (
 		<React.Fragment>
 			<SectionBanner title={"Ưu Đãi - Nha Khoa ĐaKao"} />
 			<Section6
-				// data={isDataNews}
+				data={isDataNews}
 				title={"Bài viết ưu đãi"}
 				url="uu-dai"
 			/>

@@ -54,7 +54,7 @@ export default function HomePage() {
 	};
 	const [isOpen, setIsOpen] = useState(false);
 	const [dataServices, setDataServices] = useState([]);
-	// const [dataNews, setDataNews] = useState([]);
+	const [dataNews, setDataNews] = useState([]);
 	// const [dataComment3, setDataComment3] = useState([]);
 	const [dataUserFiles, setDataUserFiles] = useState([]);
 
@@ -62,7 +62,7 @@ export default function HomePage() {
 		try {
 			const [
 				responseServices,
-				// responseNews,
+				responseNews,
 				// responseComment3,
 				responseUserFiles,
 			] = await Promise.all([
@@ -71,7 +71,7 @@ export default function HomePage() {
 					params: { limit: 6 },
 					q: { status: true, "exfields.loai_vat_tu": "Services" },
 				}),
-				// handleGetData({ api: "news", params: { limit: 3 } }),
+				handleGetData({ api: "news", params: { limit: 3 } }),
 				// handleGetData({ api: "comment3" }),
 				handleGetData({
 					api: "assbanner",
@@ -79,7 +79,7 @@ export default function HomePage() {
 				}),
 			]);
 			setDataServices(responseServices);
-			// setDataNews(responseNews);
+			setDataNews(responseNews);
 			// setDataComment3(responseComment3);
 			setDataUserFiles([...responseUserFiles, ...ListImage]);
 		} catch (error) {
@@ -102,7 +102,7 @@ export default function HomePage() {
 			<Section4 />
 			<Section7 />
 			{/* <Section5 /> */}
-			<Section6 title="Tin tức nha khoa" />
+			<Section6 title="Tin tức nha khoa" data={dataNews}/>
 			<SectionFooter1 />
 			<FloatButton.BackTop
 				shape="square"
