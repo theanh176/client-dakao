@@ -9,7 +9,7 @@ import SectionFooter1 from "../sections/SectionFooter1";
 
 export default function UuDai() {
 	const [isDataNews, setIsDataNews] = useState([]);
-	// const [dataComment3, setDataComment3] = useState([]);
+	const [dataComment3, setDataComment3] = useState([]);
 
 	const getDataNews = async () => {
 		try {
@@ -26,36 +26,36 @@ export default function UuDai() {
 		}
 	};
 
-	// const handleGetData = async (api, q) => {
-	// 	try {
-	// 		const response = await request.get(`${api}`, {
-	// 			params: {
-	// 				...q,
-	// 			},
-	// 			headers: {
-	// 				"X-Access-Token": "flex.public.token",
-	// 				"Content-Type": "application/json",
-	// 			},
-	// 		});
-	// 		return response?.data;
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
-	// const handleGetDataAll = async () => {
-	// 	try {
-	// 		const [responseComment3] = await Promise.all([
-	// 			handleGetData("comment3"),
-	// 		]);
+	const handleGetData = async (api, q) => {
+		try {
+			const response = await request.get(`${api}`, {
+				params: {
+					...q,
+				},
+				headers: {
+					"X-Access-Token": "flex.public.token",
+					"Content-Type": "application/json",
+				},
+			});
+			return response?.data;
+		} catch (error) {
+			console.log(error);
+		}
+	};
+	const handleGetDataAll = async () => {
+		try {
+			const [responseComment3] = await Promise.all([
+				handleGetData("comment3"),
+			]);
 
-	// 		setDataComment3(responseComment3);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
+			setDataComment3(responseComment3);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
 	useEffect(() => {
-		// handleGetDataAll();
+		handleGetDataAll();
 		getDataNews();
 	}, []);
 	return (
@@ -66,7 +66,7 @@ export default function UuDai() {
 				title={"Bài viết ưu đãi"}
 				url="uu-dai"
 			/>
-			<Section7 />
+			<Section7 data={dataComment3} />
 			<SectionFooter1 />
 			<FloatButton.BackTop
 				shape="square"

@@ -49,8 +49,7 @@ export default function Introduce() {
 			<Section9 />
 			<Section3 />
 			<Section10 />
-			{/* <Section7 data={dataComment3} /> */}
-			<Section7 />
+			<Section7 data={dataComment3} />
 			<SectionFooter1 />
 			<FloatButton.BackTop
 				shape="square"

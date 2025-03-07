@@ -55,7 +55,7 @@ export default function HomePage() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [dataServices, setDataServices] = useState([]);
 	const [dataNews, setDataNews] = useState([]);
-	// const [dataComment3, setDataComment3] = useState([]);
+	const [dataComment3, setDataComment3] = useState([]);
 	const [dataUserFiles, setDataUserFiles] = useState([]);
 
 	const handleGetDataAll = async () => {
@@ -63,7 +63,7 @@ export default function HomePage() {
 			const [
 				responseServices,
 				responseNews,
-				// responseComment3,
+				responseComment3,
 				responseUserFiles,
 			] = await Promise.all([
 				handleGetData({
@@ -72,7 +72,7 @@ export default function HomePage() {
 					q: { status: true, "exfields.loai_vat_tu": "Services" },
 				}),
 				handleGetData({ api: "news", params: { limit: 3 } }),
-				// handleGetData({ api: "comment3" }),
+				handleGetData({ api: "comment3" }),
 				handleGetData({
 					api: "assbanner",
 					params: { t: 1, page: 1, limit: 500 },
@@ -80,7 +80,7 @@ export default function HomePage() {
 			]);
 			setDataServices(responseServices);
 			setDataNews(responseNews);
-			// setDataComment3(responseComment3);
+			setDataComment3(responseComment3);
 			setDataUserFiles([...responseUserFiles, ...ListImage]);
 		} catch (error) {
 			console.log(error);
@@ -97,12 +97,12 @@ export default function HomePage() {
 				data={dataUserFiles?.length >= 1 ? dataUserFiles : ListImage}
 			/>
 			<Section1 />
-			<Section2 data={dataServices}/>
+			<Section2 data={dataServices} />
 			<Section3 />
 			<Section4 />
-			<Section7 />
+			<Section7 data={dataComment3} />
 			{/* <Section5 /> */}
-			<Section6 title="Tin tức nha khoa" data={dataNews}/>
+			<Section6 title="Tin tức nha khoa" data={dataNews} />
 			<SectionFooter1 />
 			<FloatButton.BackTop
 				shape="square"
