@@ -63,7 +63,7 @@ export default function UuDai() {
 			<SectionBanner title={"Ưu Đãi - Nha Khoa ĐaKao"} />
 			<Section6
 				data={isDataNews}
-				title={"Bài viết ưu đãi"}
+				title={"Bài viết ưu đã"}
 				url="uu-dai"
 			/>
 			<Section7 data={dataComment3} />
