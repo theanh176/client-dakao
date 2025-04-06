@@ -11,8 +11,8 @@ export default function SectionFooter1() {
 			title: "Số điện thoại",
 			content: (
 				<span className="text-center text-[#9c9c9c]">
-					<a href={`tel:0836031153`} className="hover:text-[#4ba3da]">
-						083 603 1153
+					<a href={`tel:0766110086`} className="hover:text-[#4ba3da]">
+						0766 110 086
 					</a>{" "}
 					{/* -{" "}
 					<a

@@ -58,10 +58,10 @@ export default function LeftContent3() {
 						<span className="text-2xl font-semibold">Hotlines</span>
 						<span className="flex flex-col justify-start items-start gap-0">
 							<a
-								href={`tel:0836031153`}
+								href={`tel:0766110086`}
 								className="hover:text-[#4ba3da]"
 							>
-								083 603 1153
+								0766 110 086
 							</a>
 							{/* <a
 								href={`tel:0908327787`}
@@ -105,8 +105,8 @@ export default function LeftContent3() {
 				</span>
 				<hr className="w-1/5 h-[2px] bg-[#4ba3da] mb-5" />
 				<span className="text-left text-base text-[#9c9c9c]">
-					Đặt lịch hẹn tới Nha Khoa Cười bằng cách điền vào thông tin
-					bên dưới
+					Đặt lịch hẹn tới Nha Khoa Hoa Cười bằng cách điền vào thông
+					tin bên dưới
 				</span>
 				<div className="flex justify-start items-center gap-2 max-sm:flex-col max-sm:items-start">
 					<Form

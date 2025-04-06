@@ -150,11 +150,11 @@ export default function Section8({ data = dataSection_9 }) {
 									<span
 										onClick={(e) => {
 											e.preventDefault();
-											window.location.href = `tel:0836031153`;
+											window.location.href = `tel:0766110086`;
 										}}
 										className="hover:text-[#60d670]"
 									>
-										Liên hệ - 083 603 1153
+										Liên hệ - 0766 110 086
 									</span>
 								)}
 							</span>

@@ -103,10 +103,10 @@ export default function Footer() {
 							</div>
 							<span className="flex flex-col max-sm:flex-row max-sm:gap-2">
 								<a
-									href={`tel:0836031153`}
+									href={`tel:0766110086`}
 									className="hover:text-[#4ba3da]"
 								>
-									083 603 1153
+									0766 110 086
 								</a>
 								{/* <span className="sm:hidden">-</span>
 								<a

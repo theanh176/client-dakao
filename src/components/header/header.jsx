@@ -175,10 +175,10 @@ export default function Header() {
 							<FiPhoneOutgoing />
 							<span>
 								<a
-									href={`tel:0836031153`}
+									href={`tel:0766110086`}
 									className="hover:text-[#4ba3da]"
 								>
-									083 603 1153
+									0766 110 086
 								</a>{" "}
 								{/* -{" "}
 								<a
