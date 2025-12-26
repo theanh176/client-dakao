@@ -1,5 +1,3 @@
-import LogoHoaCuoi from "../../public/assets/images/logo_hoacuoi.png";
-import FullLogoHoaCuoi from "../../public/assets/images/full_logo_hoacuoi.png";
 import FullLogoDaKao from "../../public/assets/images/full_logo_dakao.jpg";
 import Slider1 from "../../public/assets/images/slider-1.png";
 import Slider2 from "../../public/assets/images/slider-2.png";
@@ -17,7 +15,6 @@ import Section3_4 from "../../public/assets/images/h1-icon-img-4-1.png";
 import Section3_5 from "../../public/assets/images/h1-icon-img-5-1.png";
 import Section3_6 from "../../public/assets/images/h1-icon-img-6.png";
 import Section4_1 from "../../public/assets/images/DSC00293-2.jpg";
-import Section5_1 from "../../public/assets/images/avatar_default_hoacuoi.png";
 import Section5_2 from "../../public/assets/images/DSC00412-2.jpg";
 import Section5_3 from "../../public/assets/images/DSC00498-2.jpg";
 import Section6_1 from "../../public/assets/images/team-img-2-1.jpg";
@@ -53,8 +50,6 @@ import ServiceBanner from "../../public/assets/images/MIN00209.jpg";
 import Image505 from "../../public/assets/images/505.jpg";
 
 export {
-	LogoHoaCuoi,
-	FullLogoHoaCuoi,
 	FullLogoDaKao,
 	Slider1,
 	Slider2,
@@ -72,7 +67,6 @@ export {
 	Section3_5,
 	Section3_6,
 	Section4_1,
-	Section5_1,
 	Section5_2,
 	Section5_3,
 	Section6_1,

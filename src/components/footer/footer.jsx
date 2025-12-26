@@ -39,15 +39,7 @@ export default function Footer() {
 						</span>
 						<div className="flex justify-start items-center gap-2">
 							<a
-								href="https://www.youtube.com/watch?v=09uE8hV9IMI"
-								target="_blank"
-								rel="noreferrer"
-								className="w-10 h-10 bg-white cursor-pointer hover:scale-105 transition-all rounded-md flex justify-center items-center"
-							>
-								<FaYoutube width={20} height={20} color="red" />
-							</a>
-							<a
-								href="https://www.facebook.com/HoaCuoiDentalOffice"
+								href="https://www.facebook.com/nhakhoa.dakao"
 								target="_blank"
 								rel="noreferrer"
 								className="w-10 h-10 bg-white cursor-pointer hover:scale-105 transition-all rounded-md flex justify-center items-center"
@@ -56,18 +48,6 @@ export default function Footer() {
 									width={20}
 									height={20}
 									color="#3b5998"
-								/>
-							</a>
-							<a
-								href="https://www.youtube.com/watch?v=09uE8hV9IMI"
-								target="_blank"
-								rel="noreferrer"
-								className="w-10 h-10 bg-white cursor-pointer hover:scale-105 transition-all rounded-md flex justify-center items-center"
-							>
-								<TbWorldWww
-									width={20}
-									height={20}
-									color="#6dbac4"
 								/>
 							</a>
 						</div>
