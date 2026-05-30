@@ -45,7 +45,7 @@ export default function Section9() {
 			>
 				Bác sĩ của chúng tôi không những giàu kinh nghiệm mà còn rất
 				khéo léo và nhẹ nhàng kết hợp nghệ thuật với công nghệ, để mang
-				đến cho bạn dịch vụ nha khoa thẩm mỹ tốt nhất và bạn sẽ luôn hài
+				đến cho bạn dịch vụ nha khoa thẩm mỹ tốt và bạn sẽ luôn hài
 				lòng.
 				<br />
 				<br /> Chúng tôi chỉ sử dụng các vật liệu chất lượng cao, có

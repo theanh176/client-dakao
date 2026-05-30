@@ -238,10 +238,10 @@ export default function Section10() {
 					className="text-justify w-[calc(100%/3-32px)] max-lg:w-4/5 flex gap-4 flex-col justify-start items-start"
 				>
 					Chúng tôi tự hào cung cấp dịch vụ chăm sóc nha khoa chất
-					lượng cao nhất và cá nhân hóa cho mỗi bệnh nhân. Chúng tôi
+					lượng cao và cá nhân hóa cho mỗi bệnh nhân. Chúng tôi
 					sẽ dành thời gian để đưa ra từng kế hoạch điều trị phù hợp
 					với từng khách hàng và luôn thảo luận về tất cả các lựa chọn
-					của bạn để bạn biết rằng bạn đang đưa ra quyết định tốt nhất
+					của bạn để bạn biết rằng bạn đang đưa ra quyết định tốt
 					cho bạn.
 				</div>
 			</div>

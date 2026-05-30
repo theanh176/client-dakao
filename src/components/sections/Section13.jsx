@@ -48,7 +48,7 @@ const dataSection_6 = [
 		exfields: {
 			banner: Section13_4,
 			mo_ta_ngan2:
-				"Tại Nha Khoa ĐaKao, mục tiêu cuối cùng của chúng tôi là bảo đảm sự toàn vẹn, vẻ đẹp và sức khỏe răng miệng ở mức hoàn hảo nhất.",
+				"Tại Nha Khoa ĐaKao, mục tiêu cuối cùng của chúng tôi là bảo đảm sự toàn vẹn, vẻ đẹp và sức khỏe răng miệng ở mức hoàn hảo",
 		},
 	},
 ];

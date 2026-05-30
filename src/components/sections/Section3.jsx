@@ -34,7 +34,7 @@ export default function Section3() {
 							Bác sĩ của chúng tôi không những giàu kinh nghiệm mà
 							còn rất khéo léo và nhẹ nhàng kết hợp nghệ thuật với
 							công nghệ, để mang đến cho bạn dịch vụ nha khoa thẩm
-							mỹ tốt nhất và bạn sẽ luôn hài lòng.
+							mỹ tốt và bạn sẽ luôn hài lòng.
 						</span>
 					</span>
 				</div>
